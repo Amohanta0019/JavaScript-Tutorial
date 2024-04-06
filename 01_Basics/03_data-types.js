@@ -18,7 +18,50 @@ symbol --> to find uniqueness
 object -->
 */
 
-console.log( typeof("ahana")) // string
-console.log( typeof(undefined)) // undefined
-console.log( typeof(null)) // object
+// console.log( typeof("ahana")) // string
+// console.log( typeof(undefined)) // undefined
+// console.log( typeof(null)) // object
+
+/*
+primitive --> 7 types
+string
+number 
+boolean
+null
+undefined
+symbol
+BigInt
+non-primitive/ reference--->
+array
+objects
+functions
+
+
+*/
+
+//type of symbol are different
+const id = Symbol('123')
+const id1 = Symbol('123')
+console.log(id===id1);  //false
+console.log(id==id1);  //false
+
+
+// suffix n for BigInt
+const bigNumber = 11111111111111111111111111111;
+
+const bigNumber1 = 11111111111111111111111111111n;
+
+//array in js
+const heros = ['iron-man', 'cap america','spiderman', 'black panther','thor','hulk'];
+
+//object in js
+let myObj = {
+    name :'ahana',
+    age: 20,
+}
+
+//function in js
+const myFunc = function(){
+    console.log("hello world");
+}
 
