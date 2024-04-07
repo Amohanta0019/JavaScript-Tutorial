@@ -28,7 +28,8 @@
 			"settings": {
 				"editor.fontSize": 20,
 				"terminal.integrated.fontSize": 16,
-				"editor.wordWrap": "on"
+				"editor.wordWrap": "on",
+				"code-runner.runInTerminal": true
 			}
 			
 		}
