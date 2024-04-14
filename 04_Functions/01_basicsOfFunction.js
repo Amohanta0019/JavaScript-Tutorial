@@ -36,10 +36,39 @@ function addTwoNum(number1 , number2) {
 }
 
 const result = addTwoNum(3,4) //no op , as no console inside func
-console.log("Result :- ",result);// 7
+// console.log("Result :- ",result);// 7
+
+
+function loginUserMsg(uname) {
+    return `${uname} just logged in`
+}
+
+// loginUserMsg("ahana") // no op as result is not captured in any variable
+
+// console.log(loginUserMsg("ahana"));// ahana just logged in 
+
+// console.log( loginUserMsg());// undefined just logged in 
+
+
+function loginUmsg(uname) {
+    // if(!uname){...} if er bhitorer cond true hole tobei loop e enter kore , in this case uname is false as it is undefined, so !umane die true kora holo
+    if (uname === undefined) {
+        console.log("please provide a user name");
+        return
+    }
+    return `${uname} just logged in`
+}
+
+// console.log(loginUmsg());//please provide a user name (nextline) undefined
 
 
 
 
+function loginUmsgDef(uname = 'ami') {
+    return `${uname} just logged in`
+}
+// uname = 'ami' means uname now has a default value , if no argument is passed then ami will come , otherwise given argument will come. NO CHANCE OF UNDEFINED .
+console.log(loginUmsgDef()); //ami just logged in
+console.log(loginUmsgDef("ahana")); //ahana just logged in
 
 
