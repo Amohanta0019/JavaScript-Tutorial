@@ -46,3 +46,4 @@ console.log("In global scope :- ", a); // 100
 
 
 
+
